@@ -20,11 +20,8 @@ module.exports = {
       rules: [
          {
             test: /\.jsx?$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-               presets: ['es2015', 'react']
-            }
+            exclude: /(node_modules|bower_components)/,
+            loaders: ['babel-loader?presets[]=react,presets[]=es2015,presets[]=stage-0']
          },
          {
             test: /\.css?$/,
@@ -36,6 +33,18 @@ module.exports = {
               {
                 loader: 'file-loader',
               },
+            ]
+          },
+          {
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'fonts/'
+                }
+              }
             ]
           }
 

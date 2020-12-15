@@ -1,0 +1,21 @@
+.content-body{
+    background-image: url("../img/pexels-elina-krima-3311382.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+}
+.header-nav{
+    background:rgb(11, 12, 16);
+    border-radius:"3px";
+}
+.header-nav-item{
+    font-family:'Roboto';
+    color:'#FFFFFF';
+}
+.app{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
