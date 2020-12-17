@@ -1,5 +1,5 @@
 .content-body{
-    background-image: url("../img/pexels-elina-krima-3311382.jpg");
+    background-image: url("../img/speaker_texture.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,4 +10,8 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+.blog-body{
+    background-color: transparent;
+    color:white;
 }
