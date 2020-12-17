@@ -6,26 +6,25 @@ import '../public/css/styles.css';
 class ContentBody extends Component{
     render(){
         return (
-            <main className={"content-body"}>
-                <div style={{color:'white',textAlign:'center'}}>
-                    <h1>
-                        <Switch>
-                            <Route exact path='/'>
-                                <Home/>
-                            </Route>
-                            <Route exact path='/about'>
-                                <About/>
-                            </Route>
-                            <Route exact path='/blog'>
-                                <Blog/>
-                            </Route>
-                            <Route exact path='/projects'>
-                                <Project/>
-                            </Route>
-                        </Switch>
-                    </h1>
-                </div>
-            </main>
+       
+            <div className={"content-body"} style={{color:'white',textAlign:'center'}}>
+                <h1>
+                    <Switch>
+                        <Route exact path='/'>
+                            <Home/>
+                        </Route>
+                        <Route exact path='/about'>
+                            <About/>
+                        </Route>
+                        <Route exact path='/blog'>
+                            <Blog/>
+                        </Route>
+                        <Route exact path='/projects'>
+                            <Project/>
+                        </Route>
+                    </Switch>
+                </h1>
+            </div>
         );
     }
 }

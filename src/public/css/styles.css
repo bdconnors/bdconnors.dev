@@ -6,14 +6,6 @@
     position: relative;
     flex: 1;
 }
-.header-nav{
-    background:rgb(11, 12, 16);
-    border-radius:"3px";
-}
-.header-nav-item{
-    font-family:'Roboto';
-    color:'#FFFFFF';
-}
 .app{
     display: flex;
     min-height: 100vh;
