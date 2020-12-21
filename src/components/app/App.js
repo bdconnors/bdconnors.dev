@@ -5,15 +5,15 @@ import Footer from './Footer';
 import ContentBody from './ContentBody';
 
 class App extends Component{
-   render(){
-      return(
-         <Router>
-            <Header/>
-            <ContentBody/>
-            <Footer/>
-         </Router>
-      );
-   }
+    render(){
+        return(
+            <Router>
+                <Header/>
+                <ContentBody/>
+                <Footer/>
+            </Router>
+        );
+    }
 }
 function Home(){
    return "Home";
