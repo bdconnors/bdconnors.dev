@@ -1,13 +1,7 @@
 import {MDBContainer, MDBRow,MDBCol} from 'mdbreact';
 import React, { Component} from 'react';
 import Accordion from '../Accordion';
-import NodeLogo from '../../public/img/node_logo.png';
-import PhpLogo from '../../public/img/php_logo.png';
-import JavascriptLogo from '../../public/img/js_logo.png';
-import MysqlLogo from '../../public/img/mysql_logo.png';
-import PostgresqlLogo from '../../public/img/postgresql_logo.png';
-import MongoLogo from '../../public/img/mongo_logo.png';
-import ReactLogo from '../../public/img/react_logo.png';
+import Logo from '../Logo';
 
 class HomePage extends Component{
     state = {
@@ -21,37 +15,37 @@ class HomePage extends Component{
     );
    render(){
       return(
-        <MDBContainer id={"home-content-container"} className={"mt-5"}>
+        <MDBContainer id={"home-content-container"} className={"mt-5 mb-5"}>
            <Accordion id={"content1"} title={"Programming"} icon={"code"}>
                <MDBRow>
-                   <MDBCol>
-                       <img src={PhpLogo}></img>
+                   <MDBCol md='3'>
+                        <Logo type={'php'}/>
                    </MDBCol>
-                   <MDBCol>
-                       <img src={JavascriptLogo}></img>
+                   <MDBCol md='3'>
+                        <Logo type={'js'}/>
                    </MDBCol>
                </MDBRow>
            </Accordion>
            <Accordion id={"content2"} title={"Database"} icon={"database"}>
                 <MDBRow>
-                        <MDBCol>
-                            <img src={MysqlLogo}></img>
+                        <MDBCol md='3'>
+                            <Logo type={'mysql'}/>
                         </MDBCol>
-                        <MDBCol>
-                            <img src={PostgresqlLogo}></img>
+                        <MDBCol md='3'>
+                            <Logo type={'postgre'}/>
                         </MDBCol>
-                        <MDBCol>
-                            <img src={MongoLogo}></img>
+                        <MDBCol md='3'>
+                            <Logo type={'mongo'}/>
                         </MDBCol>
                 </MDBRow>
            </Accordion>
            <Accordion id={"content3"} title={"Frameworks"} icon={"code-branch"}>
                 <MDBRow>
-                    <MDBCol>
-                        <img src={NodeLogo}></img>
+                    <MDBCol md='3'>
+                        <Logo type={'node'}/>
                     </MDBCol>
-                    <MDBCol>
-                        <img src={ReactLogo}></img>
+                    <MDBCol md='3'>
+                        <Logo type={'react'}/>
                     </MDBCol>
                 </MDBRow>
            </Accordion>
