@@ -15,7 +15,7 @@ class Logo extends Component{
             <MDBCard>
                 <MDBCardBody style={{textAlign:'center'}}>
                     <img src={values.image} height = {96} width = {96}></img>
-                    <MDBCardTitle>{values.title}</MDBCardTitle>
+                    <h4 className={"h4-responsive"}>{values.title}</h4>
                 </MDBCardBody>
             </MDBCard>
         
@@ -45,7 +45,7 @@ class Logo extends Component{
                 break;
             case 'postgre':
                 values.image = PostgresqlLogo
-                values.title ='PostGreSQL'
+                values.title ='PostgreSQL'
                 break;
             case 'mongo':
                 values.image = MongoLogo;
